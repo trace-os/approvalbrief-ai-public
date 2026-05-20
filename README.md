@@ -1,10 +1,10 @@
 # ApprovalBrief AI Public
 
-**Public materials for ApprovalBrief AI - proof packs for regulated approval decisions.**
+_Public-safe repository · Private product build active · Prototype / design-partner discovery_
 
-ApprovalBrief AI helps regulated teams prepare review-ready proof packs before high-stakes approval decisions.
+**Proof packs for regulated approval decisions.**
 
-It is designed for workflows where evidence is scattered, review expectations differ across teams, and the final decision must remain human-owned and defensible.
+This repository contains public-safe materials only. It does not expose private implementation, internal mappings, readiness-gate details, bounded-agent task design, or design-partner-specific workflows.
 
 ---
 
