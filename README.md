@@ -1,73 +1,87 @@
 # ApprovalBrief AI Public
 
-Public-safe materials for **ApprovalBrief AI**: a proof-pack system for regulated approval decisions.
-
-## What ApprovalBrief AI does
+**Public materials for ApprovalBrief AI - proof packs for regulated approval decisions.**
 
 ApprovalBrief AI helps regulated teams prepare review-ready proof packs before high-stakes approval decisions.
 
-It is designed for workflows where evidence is scattered across teams, systems, and formats, and where multiple reviewers need different proof before a decision can move forward.
+It is designed for workflows where evidence is scattered, review expectations differ across teams, and the final decision must remain human-owned and defensible.
 
-Initial focus areas:
-
-- payment pilots and controlled rollouts
-- vendor / ICT third-party risk approvals
-- internal AI tool approvals
-- regulated enterprise change gates
-
-## Problem
-
-In regulated organizations, approval decisions often stall because the case is not reviewable enough.
-
-A payment rollout, vendor approval, or internal AI tool may involve product, operations, finance, risk, compliance, security, and business stakeholders.
-
-Each reviewer needs different evidence. When that proof is fragmented, teams face:
-
-- repeated clarification loops
-- late blockers
-- unclear ownership
-- weak traceability
-- slow approval cycles
-- poor decision memory
-
-## Product concept
-
-ApprovalBrief AI turns fragmented evidence into structured proof packs.
-
-A proof pack may include:
-
-- change classification
-- approved evidence references
-- decision-relevant claims
-- readiness checks
-- blockers versus acceptable conditions
-- named owners
-- reviewer-specific views
-- rerun/version history
-- human sign-off boundaries
+---
 
 ## Core principle
 
-AI helps prepare the proof.
+> **Bounded specialist AI agents prepare proof artifacts.**  
+> **Deterministic readiness gates structure the decision state.**  
+> **Humans approve, condition, hold, or escalate.**
 
-Deterministic checks structure readiness.
+ApprovalBrief AI is not an autonomous approval system.
 
-Humans approve, condition, or hold.
+It is a controlled evidence-to-decision layer for regulated workflows.
 
-## What this public repository contains
+---
 
-This repository is intentionally public-safe.
+## Where it applies
 
-It may include:
+Initial public focus areas:
+
+- payment pilot and rollout readiness
+- vendor / ICT third-party risk approval
+- internal AI tool approval
+- regulated enterprise change gates
+
+These are different buyer doors, but the underlying problem is similar: teams need clearer evidence, ownership, reviewer context, and decision memory before approving a controlled change.
+
+---
+
+## High-level model
+
+```mermaid
+flowchart LR
+    A[Fragmented evidence] --> B[Bounded specialist agents]
+    B --> C[Proof-pack layer]
+    C --> D[Readiness gates]
+    D --> E{Human decision}
+
+    E -->|Approve| F[Decision record]
+    E -->|Condition| G[Conditions + owners]
+    E -->|Hold| H[Blockers + next actions]
+
+    G --> I[Rerun after updates]
+    H --> I
+    I --> C
+```
+
+---
+
+## What a proof pack supports
+
+A proof pack is intended to help teams answer:
+
+- What decision is being requested?
+- What evidence supports the case?
+- What is missing, unclear, or blocked?
+- Who owns the next action?
+- Which reviewers need context?
+- What changed since the last review?
+- What decision was made, and under which conditions?
+
+The exact internal methods, agent roles, mappings, templates, and orchestration logic are private.
+
+---
+
+## Public / private boundary
+
+This repository is intentionally limited to public-safe material.
+
+Public materials may include:
 
 - concept notes
 - synthetic examples
-- non-sensitive workflow diagrams
-- public-facing product explanations
+- high-level diagrams
 - validation framing
-- buyer-door research summaries
+- non-sensitive product explanations
 
-It does not include:
+Public materials do **not** include:
 
 - private product implementation
 - proprietary orchestration logic
@@ -75,19 +89,22 @@ It does not include:
 - internal mappings
 - sensitive templates
 - regulated case material
+- detailed reviewer-lane logic
+- design-partner-specific workflows
+- bounded-agent task design
+- readiness-gate implementation details
+
+---
 
 ## Current stage
 
 ApprovalBrief AI is currently in prototype and design-partner discovery.
 
-The next validation step is shadow-mode testing with synthetic, redacted, or approved case material to assess whether proof packs improve:
+The next validation step is shadow-mode testing with synthetic, redacted, or approved case material.
 
-- reviewability
-- blocker visibility
-- owner clarity
-- evidence traceability
-- decision confidence
-- reduction of clarification loops
+The goal is to test whether proof packs improve reviewability, ownership clarity, evidence traceability, and decision confidence before deeper enterprise integration.
+
+---
 
 ## Contact
 
