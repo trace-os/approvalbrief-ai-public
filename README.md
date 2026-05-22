@@ -8,6 +8,16 @@ This repository contains public-safe materials only. It does not expose private 
 
 ---
 
+## What this is for
+
+ApprovalBrief AI is for teams that need reviewable proof before a regulated change can move forward.
+
+Examples include payment pilots, vendor or technology-provider integrations, internal AI tool rollouts, enterprise platform changes, risk/compliance review, and partner or audit handoff.
+
+The public repository shows the product framing and validation boundary. Private implementation, orchestration logic, readiness-gate internals, design-partner workflows, and real customer materials are not public.
+
+...
+
 ## Core principle
 
 > **Bounded specialist AI agents prepare proof artifacts.**  
